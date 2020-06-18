@@ -14,11 +14,9 @@ It shall be implemented on Linux. You may use virtualisation for that, but assig
 
 1. execute Apache's `ab` on your computer to test a simple web server. You may use `nginx`, `tomcat` or other web servers to understand the typical numbers of latency vs. TPS depending on the concurrency (`-c`). Try to understand the figures you obtain and reason about it. Check the usage of CPU (e.g. with `top`) and try to obtain the best configuration for best performance. Verify that all connections end up with no error.
 
-1. implement `ab` in Go (`goab`) and implement the `-n`, `-c` and `-k` parameters. Implement following metrics:
-  - Transactions Per Second (TPS)
-  - Average latency
-  - Errored responses (amount, percentage %)
-
-    Test your HTTP server of choice with `goab`. Compare results with `ab` to verify your implementation is sound.
+1. implement `ab` in Go (`goab`) including the `-n`, `-c` and `-k` parameters. Test your HTTP server of choice with `goab`. Compare results with `ab` to verify your implementation is sound. Implement following metrics: 
+    - Transactions Per Second (TPS)
+    - Average latency
+    - Errored responses (amount, percentage %)
 
 1. implement an HTTP server in Go (`httpserver`). Compare results with the off the shelf server of you your choice.
