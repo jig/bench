@@ -20,3 +20,7 @@ It shall be implemented on Linux. You may use virtualisation for that, but assig
     - Errored responses (amount, percentage %)
 
 1. implement an HTTP server in Go (`httpserver`). Compare results with the off the shelf server of you your choice.
+
+## Study resources
+
+- [A Tour of Go](https://go.dev/tour/welcome/1)
